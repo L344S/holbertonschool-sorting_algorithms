@@ -13,7 +13,11 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t a, b;
-	int store_temporary;
+	size_t store_temporary;
+
+	/* check if array is NULL or size is less than 2 */
+	if (array == NULL || size < 2)
+		return; /* stop cuz there's nothing to sort */
 
 	/* go through array from 0 to size - 1 */
 	for (a = 0; a < size - 1; a++)
