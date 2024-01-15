@@ -1,2 +1,6 @@
 # Ignore all tests files
 *main.c
+# Ignore config files
+.vscode
+# Ignore all executables
+*.exe
