@@ -22,8 +22,7 @@ void selection_sort(int *array, size_t size)
 	/* go through array from 0 to end of array */
 	for (current = 0; current < size - 1; current++) /* ex : 19, 48 .. */
 	{
-		/* set first element's index as the smallest temporarily */
-		/* smallest will be use to store the smallest element */
+		/* smallest will be use to store the smallest element, init to current */
 		smallest = current;
 		/* iterate through array from current + 1 (le reste du tableau) */
 		for (next = current + 1; next < size; next++)
@@ -51,4 +50,5 @@ void selection_sort(int *array, size_t size)
     /* store_temporary = array[current] = 19 */
     /* array[current] = array[smallest] = 7 */
     /* array[smallest] = store_temporary = 19 */
+    /* print : array = {7, 48, 99, 71, 13, 52, 96, 73, 86, 19} */
 }
