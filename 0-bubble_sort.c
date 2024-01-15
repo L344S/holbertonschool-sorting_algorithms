@@ -19,9 +19,9 @@ void bubble_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return; /* stop cuz there's nothing to sort */
 
-	/* go through array from 0 to size - 1 (before '\0') */
+	/* go through array from 0 to size - 1 */
 	for (a = 0; a < size - 1; a++)
-		/* go through array again from 0 to size - 1 (before '\0') */
+		/* go through array again from 0 to size - 1 */
 		for (b = 0; b < size - 1; b++)
 			/* if current element is greater than next element */
 			if (array[b] > array[b + 1])
