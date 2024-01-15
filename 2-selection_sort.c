@@ -32,10 +32,10 @@ void selection_sort(int *array, size_t size)
 		/* if the current element is not the smallest element */
 		if (current != smallest)
 		{
-			store_temporary = array[current]; /* store current element */
-			array[current] = array[smallest]; /* swap current element with smallest */
+			store_temporary = array[current];  /* store current element */
+			array[current] = array[smallest];  /* swap current element with smallest */
 			array[smallest] = store_temporary; /* swap smallest element with current */
-			print_array(array, size); /* print array every time we swap */
+			print_array(array, size);          /* print array every time we swap */
 		}
 	}
 	/* ----------- Example ------------ */
@@ -45,10 +45,10 @@ void selection_sort(int *array, size_t size)
 	/* until array[next] is smaller than array[smallest] */
 	/* if array[next] : 7 < array[smallest] : 19 */
 	/* smallest was 0, now smallest = 9 cuz index of 7 is 9 */
-    /* if current != smallest -> 0 != 9 */
-    /* ---------------- swap ---------------- */
-    /* store_temporary = array[current] = 19 */
-    /* array[current] = array[smallest] = 7 */
-    /* array[smallest] = store_temporary = 19 */
-    /* print : array = {7, 48, 99, 71, 13, 52, 96, 73, 86, 19} */
+	/* if current != smallest -> 0 != 9 */
+	/* ---------------- swap ---------------- */
+	/* store_temporary = array[current] = 19 */
+	/* array[current] = array[smallest] = 7 */
+	/* array[smallest] = store_temporary = 19 */
+	/* print : array = {7, 48, 99, 71, 13, 52, 96, 73, 86, 19} */
 }
