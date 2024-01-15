@@ -3,8 +3,9 @@
 
 /* ---------- Libraries ---------- */
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 
 
 /* ---------- Structures ---------- */
@@ -31,5 +32,8 @@ typedef struct listint_s
 void print_list(const listint_t *list);
 /* print_array.c */
 void print_array(const int *array, size_t size);
+
+/* 0-bubble_sort.c */
+void bubble_sort(int *array, size_t size);
 
 #endif
