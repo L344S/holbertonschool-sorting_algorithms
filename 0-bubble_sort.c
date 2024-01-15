@@ -1,6 +1,4 @@
 #include "sort.h"
-#include <stddef.h>
-#include <stdio.h>
 
 /**
 * bubble_sort - entry point
