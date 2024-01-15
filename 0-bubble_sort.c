@@ -26,9 +26,9 @@ void bubble_sort(int *array, size_t size)
 			/* if current element is greater than next element */
 			if (array[b] > array[b + 1])
 			{
-				store_temporary = array[b + 1];
-				array[b + 1] = array[b];
-				array[b] = store_temporary;
+				store_temporary = array[b];
+				array[b] = array[b + 1];
+				array[b + 1] = store_temporary;
 				/* print array every time we swap */
 				print_array(array, size);
 			}
